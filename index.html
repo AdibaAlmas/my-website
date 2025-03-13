@@ -14,7 +14,7 @@
             font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #9DB2BF;
+            background-color: whitesmoke
         }
 
         .navbar {
@@ -145,23 +145,25 @@
     }
 
     .benefits-section {
-        background-color: #DDE6ED;
+        background-color: #7490a5;
     }
 
     .customer-reviews {
-        background-color: #DDE6ED;
+        background-color:526D82;
+
         padding: 40px 20px;
     }
 
     .faqs-section {
-        background-color: #DDE6ED;
+        background-color: #7490a5;
         padding: 40px 20px;
     }
 
 
 
     .collection-section {
-        background-color: #DDE6ED;
+        background-color: #7490a5;
+
         text-align: center;
         padding: 40px;
         border-radius: 8px;
@@ -205,13 +207,75 @@
     </div>
 
 
+
+
 <!-- Hero Section -->
 <div id="hero">
     <div class="hero-text">
         <h1>YOUR ALL-TIME FAVORITE</h1>
-        <p>SHOP NOW</p>
+        <p class="sub-text">Discover the trendiest handbags curated just for you!</p>
+        <a href="#shop-now" class="shop-btn">SHOP NOW</a>
     </div>
 </div>
+
+<style>
+    #hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: url('your-image-url.jpg') center/cover no-repeat; /* Add a stylish background */
+        text-align: center;
+        color: rgb(247, 247, 247);
+    }
+
+    .hero-text {
+        animation: fadeIn 1.5s ease-in-out;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    .sub-text {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .shop-btn {
+        display: inline-block;
+        padding: 12px 30px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+        background: linear-gradient(45deg, #ff416c, #ff4b2b);
+        border-radius: 30px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0px 4px 10px rgba(255, 75, 43, 0.5);
+    }
+
+    .shop-btn:hover {
+        background: linear-gradient(45deg, #ff4b2b, #ff416c);
+        box-shadow: 0px 6px 15px rgba(255, 75, 43, 0.7);
+        transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
 
 
     <style>
@@ -283,26 +347,113 @@
      
 </div>
 
-    <div class="collection-section">
-        <div class="collection-container" id="collectionContainer">
-            
-<div class="collection-images" id="firstSet">
-                <img src="https://d1q03ajwgi7cv2.cloudfront.net/media/catalog/product/cache/e051e343fbed6099e8c148bd11733e32/d/u/du-desireo-0024500110045143_front.jpg" alt="Handbag 1">
-                <img src="https://s.catch.com.au/images/product/0188/188544/66617a8f24101780661170_w803h620.webp" alt="Handbag 2">
-                <img src="https://umoja.africa/cdn/shop/files/moxxa-nelly-red-handbag-712920.webp?v=1716879495&width=1445" alt="Handbag 3">
+
+
+
+
+<section id="shop-now" class="our-products py-5">
+    <div class="container text-center">
+        <div class="row" id="firstSet">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://d1q03ajwgi7cv2.cloudfront.net/media/catalog/product/cache/e051e343fbed6099e8c148bd11733e32/d/u/du-desireo-0024500110045143_front.jpg" class="card-img-top handbag-img" alt="Handbag 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Handbag 1</h5>
+                        <p class="card-text">A stylish and elegant handbag for all occasions.</p>
+                        <a href="#" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
             </div>
-            <div class="collection-images" id="secondSet">
-                <img src="https://cdn.sanity.io/images/dqllnil6/production/d467a78546ee06e6f74d9a7742a54bbfb8b1259e-684x684.png?w=3840&q=60&auto=format" alt="Handbag 4">
-                <img src="https://cdn.shopify.com/s/files/1/0759/2365/2916/files/253518_JET-BLACK_1_a2fa4294-fe7c-43e7-8158-f0d34b008d6a_540x.jpg?v=1724410404" alt="Handbag 5">
-                <img src="https://aldo.com.sa/cdn/shop/collections/henie_blue_460-002-039_alt3_sq_nt_1600x1600_1600x_38f68d9d-5bf5-436d-a03a-b1ae74dfedab.webp?v=1739884660" alt="Handbag 6">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://s.catch.com.au/images/product/0188/188544/66617a8f24101780661170_w803h620.webp" class="card-img-top handbag-img" alt="Handbag 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Handbag 2</h5>
+                        <p class="card-text">Perfect for casual outings and formal events alike.</p>
+                        <a href="#" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://umoja.africa/cdn/shop/files/moxxa-nelly-red-handbag-712920.webp?v=1716879495&width=1445" class="card-img-top handbag-img" alt="Handbag 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Handbag 3</h5>
+                        <p class="card-text">A trendy and durable handbag for everyday use.</p>
+                        <a href="#" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="row" id="secondSet" style="display: none;">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://cdn.sanity.io/images/dqllnil6/production/d467a78546ee06e6f74d9a7742a54bbfb8b1259e-684x684.png?w=3840&q=60&auto=format" class="card-img-top handbag-img" alt="Handbag 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Handbag 4</h5>
+                        <p class="card-text">A classy and spacious handbag for professionals.</p>
+                        <a href="#" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://cdn.shopify.com/s/files/1/0759/2365/2916/files/253518_JET-BLACK_1_a2fa4294-fe7c-43e7-8158-f0d34b008d6a_540x.jpg?v=1724410404" class="card-img-top handbag-img" alt="Handbag 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Handbag 5</h5>
+                        <p class="card-text">The perfect balance of style and convenience.</p>
+                        <a href="#" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://aldo.com.sa/cdn/shop/collections/henie_blue_460-002-039_alt3_sq_nt_1600x1600_1600x_38f68d9d-5bf5-436d-a03a-b1ae74dfedab.webp?v=1739884660" class="card-img-top handbag-img" alt="Handbag 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Handbag 6</h5>
+                        <p class="card-text">A compact and elegant handbag for night outs.</p>
+                        <a href="#" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <button class="btn btn-secondary" onclick="toggleImages()">→</button>
+        </div>
     </div>
+</section>
 
-    <div class="arrow" onclick="showNextImages()">
-        <i class="fas fa-arrow-right" id="arrowIcon"></i>
-    </div>
+<style>
+    .handbag-img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .handbag-img:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    }
+</style>
 
+<script>
+    function toggleImages() {
+        const firstSet = document.getElementById("firstSet");
+        const secondSet = document.getElementById("secondSet");
+        
+        if (firstSet.style.display === "none") {
+            firstSet.style.display = "flex";
+            secondSet.style.display = "none";
+        } else {
+            firstSet.style.display = "none";
+            secondSet.style.display = "flex";
+        }
+    }
+</script>
+
+
+
+</div>
 
     
     <div class="benefits-section section">
